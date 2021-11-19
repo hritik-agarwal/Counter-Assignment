@@ -1,0 +1,79 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.counter {
+  width: fit-content;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+#mainControls button, #mainControls input {
+  width: 60px;
+  height: 56px;
+  border: 1px #b24242 solid;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+#mainControls input {
+  text-align: center;
+  color: #b24242;
+  background-color: #f8e8e8;
+  border-left-width: 0px;
+  outline: none;
+}
+
+#decrementCounterButton {
+  color: #b24242;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#incrementCounterButton {
+  color: white;
+  background-color: #b24242;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#mainControls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#loader {
+  font-size: 12px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 600;
+}
+
+#spinner {
+  display: inline-block;
+  border-top: 2px dashed black;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  animation: spin 1s ease infinite;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to {
+        transform: rotate(1turn);
+    }
+}
+
+#featureControls input {
+  width: 50px;
+}
