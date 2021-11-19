@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './Counter.css';
-import CurrentCount from '../CurrentCount/CurrentCount';
+import CounterValue from '../CounterValue/CounterValue';
 
 class Counter extends React.Component {
   constructor() {
@@ -81,7 +81,7 @@ class Counter extends React.Component {
           <button id="incrementCounterButton" onClick={this.handleIncrement}>+</button>
         </div>
 
-        <CurrentCount count={this.state.counterValue} />
+        <CounterValue count={this.state.counterValue} />
 
         <div id="featureControls">
           <input type="number" value={this.state.initialise} onChange={this.handleInitialize} min="1" /> Initialize counter <br />

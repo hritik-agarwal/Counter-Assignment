@@ -29,6 +29,10 @@ input[type=number]::-webkit-outer-spin-button {
   outline: none;
 }
 
+#mainControls button {
+  cursor: pointer;
+}
+
 #decrementCounterButton {
   color: #b24242;
   background-color: #fff;
